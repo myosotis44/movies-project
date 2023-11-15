@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c119024a-27c9-4eb0-95ef-80824304fece" name="Changes" comment="Ajout d'un controller + repository avec FileWriter">
+    <list default="true" id="c119024a-27c9-4eb0-95ef-80824304fece" name="Changes" comment="Ajout des getter/setter pour les propriétés de type interface + Injection de dépendances dans App">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/repository/MovieRepositoryInterface.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/service/MovieServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -79,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700038868553</updated>
-      <workItem from="1700038869657" duration="7572000" />
+      <workItem from="1700038869657" duration="7911000" />
     </task>
     <task id="LOCAL-00001" summary="Structure du projet">
       <option name="closed" value="true" />
@@ -145,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700045341485</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Ajout des getter/setter pour les propriétés de type interface + Injection de dépendances dans App">
+      <option name="closed" value="true" />
+      <created>1700046939380</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700046939380</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +179,7 @@
     <MESSAGE value="Structure du projet" />
     <MESSAGE value="Instanciation de la classe movie et service" />
     <MESSAGE value="Ajout d'un controller + repository avec FileWriter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'un controller + repository avec FileWriter" />
+    <MESSAGE value="Ajout des getter/setter pour les propriétés de type interface + Injection de dépendances dans App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout des getter/setter pour les propriétés de type interface + Injection de dépendances dans App" />
   </component>
 </project>
