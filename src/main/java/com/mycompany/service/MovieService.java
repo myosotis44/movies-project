@@ -1,15 +1,20 @@
 package com.mycompany.service;
 
 import com.mycompany.entity.Movie;
-import com.mycompany.repository.GoLiveMovieRepository;
-import com.mycompany.repository.MovieRepository;
+import com.mycompany.repository.MovieRepositoryInterface;
 
-public class MovieService {
+public class MovieService implements MovieServiceInterface{
+    private MovieRepositoryInterface movieRepositoryInterface;
 
-    //private MovieRepository movieRepository=new MovieRepository();
-    private GoLiveMovieRepository goLiveMovieRepository=new GoLiveMovieRepository();
+    public MovieRepositoryInterface getMovieRepositoryInterface() {
+        return movieRepositoryInterface;
+    }
+
+    public void setMovieRepositoryInterface(MovieRepositoryInterface movieRepositoryInterface) {
+        this.movieRepositoryInterface = movieRepositoryInterface;
+    }
 
     public void registerMovie(Movie movie) {
-        goLiveMovieRepository.add(movie);
+        movieRepositoryInterface.add(movie);
     }
 }
