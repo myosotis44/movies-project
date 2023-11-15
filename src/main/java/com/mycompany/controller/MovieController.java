@@ -1,7 +1,6 @@
 package com.mycompany.controller;
 
 import com.mycompany.entity.Movie;
-import com.mycompany.service.MovieService;
 import com.mycompany.service.MovieServiceInterface;
 
 import java.util.Scanner;
@@ -9,14 +8,14 @@ import java.util.Scanner;
 public class MovieController {
 
     // MovieService service = new MovieService();
-    private MovieServiceInterface movieServiceInterface;
+    private MovieServiceInterface movieService;
 
-    public MovieServiceInterface getMovieServiceInterface() {
-        return movieServiceInterface;
+    public MovieServiceInterface getMovieService() {
+        return movieService;
     }
 
-    public void setMovieServiceInterface(MovieServiceInterface movieServiceInterface) {
-        this.movieServiceInterface = movieServiceInterface;
+    public void setMovieService(MovieServiceInterface movieService) {
+        this.movieService = movieService;
     }
 
     public void addUsingConsole() {
@@ -29,7 +28,7 @@ public class MovieController {
         Movie movie = new Movie();
         movie.setTitle(title);
         movie.setGenre(genre);
-        movieServiceInterface.registerMovie(movie);
+        movieService.registerMovie(movie);
     }
 }
 
